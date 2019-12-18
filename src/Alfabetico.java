@@ -150,7 +150,7 @@ public class Alfabetico extends javax.swing.JFrame {
                 .addContainerGap(50, Short.MAX_VALUE))
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("ALFABETICO");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMinimumSize(new java.awt.Dimension(1000, 800));
@@ -309,6 +309,8 @@ public class Alfabetico extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_bAccederMouseReleased
     
+    
+    
     /** 
      * Llamar al método filtrar() al escribir un valor en el jTextFieldBuscar.
      * @param evt Permite conocer los eventos del ratón
@@ -348,7 +350,8 @@ public class Alfabetico extends javax.swing.JFrame {
      * @param evt Permite conocer los eventos del ratón
      */
     private void jButtonSalirMouseReleased(java.awt.event.MouseEvent evt) {
-        System.exit(0);
+        //System.exit(0);
+        dispose();
     } // Cierre del método
 
     /**
@@ -581,7 +584,7 @@ public class Alfabetico extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Alfabetico().setVisible(true);
+                //new Alfabetico().setVisible(true);
             }
         });
     }

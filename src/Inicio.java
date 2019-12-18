@@ -32,12 +32,22 @@ public class Inicio extends javax.swing.JFrame {
 
         bAlfabetico.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         bAlfabetico.setText("ALFABETICO");
+        bAlfabetico.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                bAlfabeticoMouseReleased(evt);
+            }
+        });
 
         bVacLic.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         bVacLic.setText("<html>\n<pre>\nVACACIONES\n    Y\n LICENCIAS\n</pre>\n</html>");
         bVacLic.setActionCommand("<html>VACACIONES <li>\\s         Y        </li><li>  LICENCIAS</li></html>");
         bVacLic.setHideActionText(true);
         bVacLic.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bVacLic.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                bVacLicMouseReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -57,16 +67,16 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 444, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(32, 32, 32)
+                        .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(72, 72, 72)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(bAlfabetico, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(38, 38, 38)
-                                .addComponent(bVacLic, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(55, 55, 55)
+                                .addComponent(bVacLic, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -85,6 +95,14 @@ public class Inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bAlfabeticoMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bAlfabeticoMouseReleased
+        new Alfabetico().setVisible(true);
+    }//GEN-LAST:event_bAlfabeticoMouseReleased
+
+    private void bVacLicMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bVacLicMouseReleased
+        new VacLic().setVisible(true);
+    }//GEN-LAST:event_bVacLicMouseReleased
 
     /**
      * @param args the command line arguments
