@@ -1,6 +1,6 @@
 # Incidencias (JAVA + NetBeans + SQL + Encriptación AES)
 
-Control de empleados y algunas de sus incidencias.
+## Descripción
 
 Se utilizó el lenguaje de programación JAVA. Para la interfaz gráfica se utilizó SWING de NetBeans. La conexión y consulta a la base de datos se lleva a cabo mediante SQL. Todos los registros, excepto las claves primarias, se encriptan usando el modo AES.
 
