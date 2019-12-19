@@ -1,4 +1,4 @@
-# Incidencias (JAVA + NetBeans + SQL + Encriptación AES)
+# Incidencias
 
 Control de empleados y algunas de sus incidencias.
 
